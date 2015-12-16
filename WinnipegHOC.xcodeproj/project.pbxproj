@@ -16,6 +16,7 @@
 		5F848AA81C1DD82E001DA585 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F848AA71C1DD82E001DA585 /* PhotosVC.swift */; };
 		5F848AAA1C1DE46B001DA585 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F848AA91C1DE46B001DA585 /* BlueButton.swift */; };
 		5F848AAC1C1E0DD2001DA585 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F848AAB1C1E0DD2001DA585 /* HistoryVC.swift */; };
+		5F95DB8B1C210328006542DB /* group_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F95DB8A1C210328006542DB /* group_32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5F848AA71C1DD82E001DA585 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 		5F848AA91C1DE46B001DA585 /* BlueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		5F848AAB1C1E0DD2001DA585 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		5F95DB8A1C210328006542DB /* group_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_32.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				5F848A951C1C59A6001DA585 /* ViewController.swift */,
 				5F848A971C1C59A6001DA585 /* Main.storyboard */,
 				5F848A9A1C1C59A6001DA585 /* Assets.xcassets */,
+				5F95DB8A1C210328006542DB /* group_32.png */,
 				5F848A9C1C1C59A6001DA585 /* LaunchScreen.storyboard */,
 				5F848A9F1C1C59A6001DA585 /* Info.plist */,
 				5F848AA51C1DD807001DA585 /* AboutVC.swift */,
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F95DB8B1C210328006542DB /* group_32.png in Resources */,
 				5F848A9E1C1C59A6001DA585 /* LaunchScreen.storyboard in Resources */,
 				5F848A9B1C1C59A6001DA585 /* Assets.xcassets in Resources */,
 				5F848A991C1C59A6001DA585 /* Main.storyboard in Resources */,
@@ -302,6 +306,7 @@
 				5F848AA41C1C59A6001DA585 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
