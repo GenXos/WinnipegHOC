@@ -247,6 +247,187 @@
             </objects>
             <point key="canvasLocation" x="440" y="387"/>
         </scene>
+        <!--GeographyVC-->
+        <scene sceneID="KwL-Pl-VKn">
+            <objects>
+                <viewController id="Vkr-Yc-8tg" customClass="GeographyVC" customModule="WinnipegHOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zhs-S0-xd1"/>
+                        <viewControllerLayoutGuide type="bottom" id="56f-dp-Icx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qd2-Xb-Rfv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Winnipeg" translatesAutoresizingMaskIntoConstraints="NO" id="BBf-6a-195">
+                                <rect key="frame" x="0.0" y="-1" width="600" height="601"/>
+                                <animations/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3r-S6-pGW">
+                                <rect key="frame" x="0.0" y="-1" width="600" height="601"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="ULB-yX-DqF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="601"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdW-a2-ECS">
+                                            <rect key="frame" x="8" y="8" width="46" height="30"/>
+                                            <animations/>
+                                            <state key="normal" title="Back"/>
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="Vkr-Yc-8tg" eventType="touchUpInside" id="0xC-rY-Ggp"/>
+                                            </connections>
+                                        </button>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="WBf-me-8lt">
+                                            <rect key="frame" x="31" y="46" width="276" height="415"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p3K-lE-7hA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="276" height="194"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="mts_centre" translatesAutoresizingMaskIntoConstraints="NO" id="wsK-7e-6hg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="276" height="194"/>
+                                                            <animations/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="194" id="FXu-SE-bhc"/>
+                                                                <constraint firstAttribute="width" constant="275" id="v7V-3a-bOO"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <animations/>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Qka-7K-6p8">
+                                                    <rect key="frame" x="12" y="264" width="252" height="151"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zNh-bI-TuR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="252" height="64"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZC-bn-pEu">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                                    <animations/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="64" id="Eph-FJ-xLE"/>
+                                                                        <constraint firstAttribute="width" constant="64" id="dVk-eU-lmS"/>
+                                                                    </constraints>
+                                                                    <state key="normal" image="info"/>
+                                                                </button>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="history" translatesAutoresizingMaskIntoConstraints="NO" id="7op-Hp-Xmc">
+                                                                    <rect key="frame" x="94" y="0.0" width="64" height="64"/>
+                                                                    <animations/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="64" id="Tfr-Nb-J0X"/>
+                                                                        <constraint firstAttribute="width" constant="64" id="UXU-fp-Voq"/>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="ruX-Rj-071"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="sD9-VC-SJ3"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdj-hF-cez">
+                                                                    <rect key="frame" x="188" y="0.0" width="64" height="64"/>
+                                                                    <animations/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="64" id="JeI-3W-2ba"/>
+                                                                        <constraint firstAttribute="width" constant="64" id="N7y-me-nJ0"/>
+                                                                    </constraints>
+                                                                    <state key="normal" image="group"/>
+                                                                </button>
+                                                            </subviews>
+                                                            <animations/>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TA0-GL-KJl">
+                                                            <rect key="frame" x="0.0" y="87" width="252" height="64"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="photos-1" translatesAutoresizingMaskIntoConstraints="NO" id="nX7-Kw-7vk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                                    <animations/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="7ye-Wd-qx4"/>
+                                                                        <constraint firstAttribute="height" constant="64" id="8Tn-rQ-whn"/>
+                                                                        <constraint firstAttribute="width" constant="64" id="UHe-iE-PzV"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="f4N-qb-mK0"/>
+                                                                    </constraints>
+                                                                    <variation key="default">
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="7ye-Wd-qx4"/>
+                                                                            <exclude reference="f4N-qb-mK0"/>
+                                                                        </mask>
+                                                                    </variation>
+                                                                </imageView>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHo-Bf-eep">
+                                                                    <rect key="frame" x="94" y="0.0" width="64" height="64"/>
+                                                                    <animations/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="64" id="8ns-4R-eZl"/>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="Z1Y-Gg-vXP"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="ZIx-lP-wQp"/>
+                                                                        <constraint firstAttribute="width" constant="64" id="qPb-EE-IQz"/>
+                                                                    </constraints>
+                                                                    <state key="normal" image="sports"/>
+                                                                    <variation key="default">
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="Z1Y-Gg-vXP"/>
+                                                                            <exclude reference="ZIx-lP-wQp"/>
+                                                                        </mask>
+                                                                    </variation>
+                                                                </button>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="weather-1" translatesAutoresizingMaskIntoConstraints="NO" id="AD2-A7-RZd">
+                                                                    <rect key="frame" x="188" y="0.0" width="64" height="64"/>
+                                                                    <animations/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="j6p-V7-8eT"/>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="otd-GI-VUx"/>
+                                                                        <constraint firstAttribute="height" constant="64" id="rf5-0c-a2B"/>
+                                                                        <constraint firstAttribute="width" constant="64" id="yNr-fq-HxA"/>
+                                                                    </constraints>
+                                                                    <variation key="default">
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="j6p-V7-8eT"/>
+                                                                            <exclude reference="otd-GI-VUx"/>
+                                                                        </mask>
+                                                                    </variation>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <animations/>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="151" id="GIs-HV-RpD"/>
+                                                        <constraint firstAttribute="width" constant="252" id="icW-Dc-dyP"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <animations/>
+                                        </stackView>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="WBf-me-8lt" firstAttribute="leading" secondItem="ULB-yX-DqF" secondAttribute="leading" constant="8" id="8pu-it-I9O"/>
+                                        <constraint firstItem="WBf-me-8lt" firstAttribute="top" secondItem="NdW-a2-ECS" secondAttribute="bottom" constant="17" id="I77-z8-caf"/>
+                                        <constraint firstAttribute="bottom" secondItem="WBf-me-8lt" secondAttribute="bottom" constant="131" id="Lfb-Jg-4Ge"/>
+                                        <constraint firstItem="WBf-me-8lt" firstAttribute="leading" secondItem="ULB-yX-DqF" secondAttribute="leading" constant="31" id="OeK-WX-81q"/>
+                                        <constraint firstAttribute="bottom" secondItem="WBf-me-8lt" secondAttribute="bottom" constant="131" id="X03-tW-YPC"/>
+                                        <constraint firstItem="WBf-me-8lt" firstAttribute="leading" secondItem="ULB-yX-DqF" secondAttribute="leading" constant="8" id="bLL-GI-OVq"/>
+                                        <constraint firstItem="WBf-me-8lt" firstAttribute="top" secondItem="NdW-a2-ECS" secondAttribute="bottom" constant="17" id="zer-9l-76p"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="8pu-it-I9O"/>
+                                            <exclude reference="X03-tW-YPC"/>
+                                            <exclude reference="bLL-GI-OVq"/>
+                                            <exclude reference="zer-9l-76p"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <animations/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7D-CW-xSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907" y="-438"/>
+        </scene>
         <!--AboutVC-->
         <scene sceneID="3lY-2h-GB2">
             <objects>
@@ -259,14 +440,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Winnipeg2" translatesAutoresizingMaskIntoConstraints="NO" id="I7g-9U-EKs">
-                                <rect key="frame" x="-2" y="0.0" width="605" height="164"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Winnipeg" translatesAutoresizingMaskIntoConstraints="NO" id="T1F-4o-PRE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="561"/>
                                 <animations/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Knr-RD-Em4">
+                                <rect key="frame" x="13" y="0.0" width="548" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nsv-yN-5DY">
+                                    <rect key="frame" x="0.0" y="0.0" width="548" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <animations/>
+                                </view>
+                                <animations/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scA-uA-7h7">
                                 <rect key="frame" x="20" y="20" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="backButton:" destination="M2Q-fj-tDo" eventType="touchUpInside" id="eyW-g8-qH4"/>
                                 </connections>
@@ -307,6 +500,9 @@
                                                 <state key="normal" title="GEOGRAPHY">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Vkr-Yc-8tg" kind="show" id="ukl-IQ-aYA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -423,22 +619,33 @@
                             </stackView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="72Y-yI-veH" firstAttribute="top" secondItem="7He-x1-MKR" secondAttribute="bottom" constant="130" id="8IK-ia-4xw"/>
                             <constraint firstItem="72Y-yI-veH" firstAttribute="top" secondItem="7He-x1-MKR" secondAttribute="bottom" constant="20" id="9zU-30-sT3"/>
                             <constraint firstItem="72Y-yI-veH" firstAttribute="top" secondItem="7He-x1-MKR" secondAttribute="bottom" constant="74" id="NcY-V4-xGo"/>
+                            <constraint firstItem="72Y-yI-veH" firstAttribute="top" secondItem="T1F-4o-PRE" secondAttribute="bottom" id="Sfg-wi-8jP"/>
                             <constraint firstItem="72Y-yI-veH" firstAttribute="top" secondItem="7He-x1-MKR" secondAttribute="bottom" constant="35" id="UrG-TB-ltp"/>
+                            <constraint firstAttribute="trailing" secondItem="Knr-RD-Em4" secondAttribute="trailing" id="V6n-VS-AzB"/>
                             <constraint firstItem="7He-x1-MKR" firstAttribute="centerX" secondItem="r7p-wR-AMV" secondAttribute="centerX" id="WPD-W9-WIL"/>
                             <constraint firstAttribute="trailing" secondItem="7He-x1-MKR" secondAttribute="trailing" constant="147" id="YFZ-Q2-oZU"/>
+                            <constraint firstItem="72Y-yI-veH" firstAttribute="top" secondItem="Knr-RD-Em4" secondAttribute="bottom" id="YwY-D1-3Is"/>
                             <constraint firstItem="72Y-yI-veH" firstAttribute="top" secondItem="7He-x1-MKR" secondAttribute="bottom" constant="20" id="Z7f-6k-lcs"/>
-                            <constraint firstItem="7He-x1-MKR" firstAttribute="top" secondItem="I7g-9U-EKs" secondAttribute="bottom" constant="115" id="aa4-8s-KeQ"/>
+                            <constraint firstItem="T1F-4o-PRE" firstAttribute="leading" secondItem="r7p-wR-AMV" secondAttribute="leading" id="aPy-QB-vbz"/>
                             <constraint firstItem="7He-x1-MKR" firstAttribute="centerY" secondItem="r7p-wR-AMV" secondAttribute="centerY" id="avx-hQ-bPd"/>
                             <constraint firstItem="7He-x1-MKR" firstAttribute="centerX" secondItem="r7p-wR-AMV" secondAttribute="centerX" id="eSZ-7d-GsS"/>
                             <constraint firstItem="7He-x1-MKR" firstAttribute="leading" secondItem="r7p-wR-AMV" secondAttribute="leading" constant="148" id="jfa-ts-Jqa"/>
+                            <constraint firstAttribute="trailing" secondItem="Knr-RD-Em4" secondAttribute="trailing" constant="39" id="mjK-7e-xii"/>
+                            <constraint firstItem="Knr-RD-Em4" firstAttribute="top" secondItem="r7p-wR-AMV" secondAttribute="top" id="oau-1W-O85"/>
+                            <constraint firstAttribute="trailing" secondItem="T1F-4o-PRE" secondAttribute="trailing" id="sJO-2O-1cf"/>
+                            <constraint firstItem="Knr-RD-Em4" firstAttribute="leading" secondItem="r7p-wR-AMV" secondAttribute="leading" constant="13" id="vXr-uO-qen"/>
+                            <constraint firstItem="T1F-4o-PRE" firstAttribute="top" secondItem="r7p-wR-AMV" secondAttribute="top" id="wEn-Ib-ADa"/>
+                            <constraint firstItem="Knr-RD-Em4" firstAttribute="leading" secondItem="r7p-wR-AMV" secondAttribute="leading" id="wSL-AZ-HJN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="mjK-7e-xii"/>
+                                <exclude reference="vXr-uO-qen"/>
                                 <exclude reference="WPD-W9-WIL"/>
                                 <exclude reference="YFZ-Q2-oZU"/>
                                 <exclude reference="jfa-ts-Jqa"/>
@@ -483,7 +690,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="6gd-Qc-IIf">
                                 <rect key="frame" x="20" y="20" width="560" height="1353"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Winnipeg is the capital and by far largest city of the province of Manitoba, Canada. It is located near the longitudinal centre of North America, at the confluence of the Red and Assiniboine Rivers.
 The name "Winnipeg" comes from the Western Cree words for Lake Winnipeg nearby, referring to muddy or brackish water, or possibly the natural color of the Red River that flowed into the southern basin of the lake. The region was a trading centre for aboriginal peoples long before the arrival of Europeans. French traders built the first fort on the site in 1738. A settlement was later founded by the Selkirk settlers of the Red River Colony in 1812, the nucleus of which was incorporated as the City of Winnipeg in 1873. As of 2011, Winnipeg is the seventh most populated municipality in Canada.
 
@@ -498,7 +705,8 @@ More than 30,000 workers walked off their jobs in May 1919 in what came to be kn
 The Manitoba Legislative Building, constructed mainly of Tyndall stone, opened in 1920; its dome supports a bronze statue finished in gold leaf, titled "Eternal Youth and the Spirit of Enterprise" (commonly known as the "Golden Boy"). The stock market crash of 1929 and the Great Depression resulted in widespread unemployment, worsened by drought and low agricultural prices. The Depression ended after the start of World War II in 1939. In the Battle of Hong Kong, The Winnipeg Grenadiers were among the first Canadians to engage in combat against Japan. Battalion members who survived combat were taken prisoner and endured brutal treatment in prisoner of war camps. In 1942, the Victory Loan Campaign staged a mock Nazi invasion of Winnipeg to promote awareness of the stakes of the war in Europe. When the war ended, pent-up demand generated a boom in housing development, although building activity was checked by the 1950 Red River Flood. The federal government estimated damages at over $26 million, although the province indicated that it was at least double that.
 
 Prior to 1972, Winnipeg was the largest of thirteen cities and towns in a metropolitan area around the Red and Assiniboine Rivers. A consolidated metropolitan "unicity" government was established on 27 July 1971, taking effect in 1972. The City of Winnipeg Act incorporated the current city. Winnipeg experienced a severe economic downturn in advance of the early 1980s recession, during which the city incurred closures of prominent businesses, including the Winnipeg Tribune, as well as the Swift's and Canada Packers meat packing plants. In 1981, Winnipeg was one of the first cities in Canada to sign a tripartite agreement with the province and federal government to redevelop its downtown area, and the three levels of government contributed over $271 million to its development. In 1989, the reclamation and redevelopment of the CNR rail yards turned The Forks into Winnipeg's most popular tourist attraction. The city was threatened by the 1997 Red River Flood as well as further floods in 2009 and 2011.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -517,7 +725,7 @@ Prior to 1972, Winnipeg was the largest of thirteen cities and towns in a metrop
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5U-Ia-z2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1907" y="231"/>
+            <point key="canvasLocation" x="1969" y="411"/>
         </scene>
         <!--PhotosVC-->
         <scene sceneID="zh1-P7-ceh">
@@ -558,6 +766,12 @@ Prior to 1972, Winnipeg was the largest of thirteen cities and towns in a metrop
     </scenes>
     <resources>
         <image name="Winnipeg" width="515" height="499"/>
-        <image name="Winnipeg2" width="613" height="196"/>
+        <image name="group" width="239" height="239"/>
+        <image name="history" width="239" height="239"/>
+        <image name="info" width="239" height="239"/>
+        <image name="mts_centre" width="1200" height="484"/>
+        <image name="photos-1" width="239" height="239"/>
+        <image name="sports" width="239" height="239"/>
+        <image name="weather-1" width="184" height="184"/>
     </resources>
 </document>
