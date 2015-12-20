@@ -1,2 +1,2 @@
 # WinnipegHOC
-An about to provide info about winnipeg
+An app to provide info about winnipeg
